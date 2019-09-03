@@ -10,7 +10,6 @@ class StockContainer extends Component {
         {this.props.stocks.map(stock=>{
           return <Stock stock={stock} 
           key={stock.id}
-          addPortfolio={this.props.addPortfolio}
           handleClick={this.props.clickHanlder}
           />
         })

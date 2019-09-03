@@ -88,7 +88,6 @@ class MainContainer extends Component {
             <div className="col-8">
 
               <StockContainer stocks={this.state.filterstocks}
-              addPortfolio={this.handleaddPortfolio}
               clickHanlder={this.handleaddPortfolio}
               />
 
@@ -96,7 +95,6 @@ class MainContainer extends Component {
             <div className="col-4">
 
               <PortfolioContainer stocks={this.state.portfolios}
-              sellStock={this.handlesellStock}
               clickHanlder={this.handlesellStock}/>
 
             </div>
