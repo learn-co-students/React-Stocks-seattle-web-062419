@@ -7,8 +7,13 @@ class StockContainer extends Component {
     return (
       <div>
         <h2>Stocks</h2>
-        {
-          //render the list of stocks here
+        {this.props.stocks.map(stock=>{
+          return <Stock stock={stock} 
+          key={stock.id}
+          addPortfolio={this.props.addPortfolio}
+          handleClick={this.props.clickHanlder}
+          />
+        })
         }
       </div>
     );
